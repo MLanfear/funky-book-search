@@ -24,7 +24,7 @@ app.use(express.json());
 
 
 //  ¥¥¥¥¥ APOLLO SERVER ¥¥¥¥¥
-const startApolloServer = async (typeDefs,resolvers) => {
+const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
   //SERVER INEGRATION WITH EXPRESS
   server.applyMiddleware({app});
@@ -32,7 +32,7 @@ const startApolloServer = async (typeDefs,resolvers) => {
     app.use(express.static(path.join(__dirname, '../client/build')));
   }
 
-  app.get('*',(req,res) => {
+  app.get('*',(req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   });
 
@@ -43,4 +43,4 @@ const startApolloServer = async (typeDefs,resolvers) => {
     });
   });
 };
-startApolloServer(typeDefs,resolvers);
+startApolloServer(typeDefs, resolvers);

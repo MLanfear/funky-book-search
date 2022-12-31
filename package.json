@@ -2,6 +2,9 @@
   "name": "funky-book-search",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.17.0"
+  },
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -14,8 +17,5 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
-  },
-  "dependencies": {
-    "apollo-server": "^3.11.1"
   }
 }
