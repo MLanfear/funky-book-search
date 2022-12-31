@@ -17,5 +17,10 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.3",
+    "apollo-client": "^2.6.10",
+    "webpack": "^4.42.0"
   }
 }
